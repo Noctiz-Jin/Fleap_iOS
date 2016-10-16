@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32130CBEFD9B53371BDEA179 /* libPods-FleapUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D1535298AE06C14C7B41C /* libPods-FleapUITests.a */; };
+		45EFDD7F1BBBDEC07CE8EB96 /* libPods-Fleap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC93B0C92A61D509D994E02 /* libPods-Fleap.a */; };
+		DC948DE78D314E9B400EB7E2 /* libPods-FleapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D19713291BD5EBE37595183E /* libPods-FleapTests.a */; };
 		FFF7AC121DB3389100430305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC111DB3389100430305 /* main.m */; };
 		FFF7AC151DB3389100430305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC141DB3389100430305 /* AppDelegate.m */; };
 		FFF7AC181DB3389100430305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC171DB3389100430305 /* ViewController.m */; };
@@ -35,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03898A7D2F12DCF5C26B9563 /* Pods-FleapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FleapUITests/Pods-FleapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1230558DA6CA7522ABF5294D /* Pods-FleapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FleapUITests/Pods-FleapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		29FCB772B43AB211903229FD /* Pods-Fleap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fleap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fleap/Pods-Fleap.release.xcconfig"; sourceTree = "<group>"; };
+		525D1535298AE06C14C7B41C /* libPods-FleapUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FleapUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		648FF95701F101CDD825624A /* Pods-FleapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FleapTests/Pods-FleapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6AAEA86D9CCA906EFDF5C91C /* Pods-Fleap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fleap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fleap/Pods-Fleap.debug.xcconfig"; sourceTree = "<group>"; };
+		7BC93B0C92A61D509D994E02 /* libPods-Fleap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fleap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19713291BD5EBE37595183E /* libPods-FleapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FleapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E254C68A469813235DADB5AF /* Pods-FleapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FleapTests/Pods-FleapTests.release.xcconfig"; sourceTree = "<group>"; };
 		FFF7AC0D1DB3389100430305 /* Fleap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fleap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF7AC111DB3389100430305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFF7AC131DB3389100430305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EFDD7F1BBBDEC07CE8EB96 /* libPods-Fleap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC948DE78D314E9B400EB7E2 /* libPods-FleapTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32130CBEFD9B53371BDEA179 /* libPods-FleapUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18CA61125CC18245D5AE6C85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BC93B0C92A61D509D994E02 /* libPods-Fleap.a */,
+				D19713291BD5EBE37595183E /* libPods-FleapTests.a */,
+				525D1535298AE06C14C7B41C /* libPods-FleapUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB493F450090A5D17672598D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AAEA86D9CCA906EFDF5C91C /* Pods-Fleap.debug.xcconfig */,
+				29FCB772B43AB211903229FD /* Pods-Fleap.release.xcconfig */,
+				648FF95701F101CDD825624A /* Pods-FleapTests.debug.xcconfig */,
+				E254C68A469813235DADB5AF /* Pods-FleapTests.release.xcconfig */,
+				03898A7D2F12DCF5C26B9563 /* Pods-FleapUITests.debug.xcconfig */,
+				1230558DA6CA7522ABF5294D /* Pods-FleapUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FFF7AC041DB3389000430305 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				FFF7AC291DB3389100430305 /* FleapTests */,
 				FFF7AC341DB3389100430305 /* FleapUITests */,
 				FFF7AC0E1DB3389100430305 /* Products */,
+				BB493F450090A5D17672598D /* Pods */,
+				18CA61125CC18245D5AE6C85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF7AC3A1DB3389100430305 /* Build configuration list for PBXNativeTarget "Fleap" */;
 			buildPhases = (
+				69CEB596526F00DA2E47E46C /* [CP] Check Pods Manifest.lock */,
 				FFF7AC091DB3389000430305 /* Sources */,
 				FFF7AC0A1DB3389000430305 /* Frameworks */,
 				FFF7AC0B1DB3389000430305 /* Resources */,
+				50CD2D2FC71BA0C704579A84 /* [CP] Embed Pods Frameworks */,
+				2221E902C77DFEC59DB9A404 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF7AC3D1DB3389100430305 /* Build configuration list for PBXNativeTarget "FleapTests" */;
 			buildPhases = (
+				5EA67EE7D06CFADEE1CD9061 /* [CP] Check Pods Manifest.lock */,
 				FFF7AC221DB3389100430305 /* Sources */,
 				FFF7AC231DB3389100430305 /* Frameworks */,
 				FFF7AC241DB3389100430305 /* Resources */,
+				8FA616B20D3E631B1947D628 /* [CP] Embed Pods Frameworks */,
+				AC0C434B84729618EA6852F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF7AC401DB3389100430305 /* Build configuration list for PBXNativeTarget "FleapUITests" */;
 			buildPhases = (
+				56EF9586A8C24E79BFBA9C9E /* [CP] Check Pods Manifest.lock */,
 				FFF7AC2D1DB3389100430305 /* Sources */,
 				FFF7AC2E1DB3389100430305 /* Frameworks */,
 				FFF7AC2F1DB3389100430305 /* Resources */,
+				622301F71CF4736DA4A242CC /* [CP] Embed Pods Frameworks */,
+				C00EE4CEAED828A9D13B3DF2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +319,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2221E902C77DFEC59DB9A404 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fleap/Pods-Fleap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50CD2D2FC71BA0C704579A84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fleap/Pods-Fleap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56EF9586A8C24E79BFBA9C9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EA67EE7D06CFADEE1CD9061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		622301F71CF4736DA4A242CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FleapUITests/Pods-FleapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69CEB596526F00DA2E47E46C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA616B20D3E631B1947D628 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FleapTests/Pods-FleapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC0C434B84729618EA6852F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FleapTests/Pods-FleapTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C00EE4CEAED828A9D13B3DF2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FleapUITests/Pods-FleapUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFF7AC091DB3389000430305 /* Sources */ = {
@@ -425,6 +612,7 @@
 		};
 		FFF7AC3B1DB3389100430305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAEA86D9CCA906EFDF5C91C /* Pods-Fleap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9U8SJP9XUE;
@@ -437,6 +625,7 @@
 		};
 		FFF7AC3C1DB3389100430305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29FCB772B43AB211903229FD /* Pods-Fleap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9U8SJP9XUE;
@@ -449,6 +638,7 @@
 		};
 		FFF7AC3E1DB3389100430305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648FF95701F101CDD825624A /* Pods-FleapTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9U8SJP9XUE;
@@ -462,6 +652,7 @@
 		};
 		FFF7AC3F1DB3389100430305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E254C68A469813235DADB5AF /* Pods-FleapTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9U8SJP9XUE;
@@ -475,6 +666,7 @@
 		};
 		FFF7AC411DB3389100430305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03898A7D2F12DCF5C26B9563 /* Pods-FleapUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9U8SJP9XUE;
 				INFOPLIST_FILE = FleapUITests/Info.plist;
@@ -487,6 +679,7 @@
 		};
 		FFF7AC421DB3389100430305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1230558DA6CA7522ABF5294D /* Pods-FleapUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9U8SJP9XUE;
 				INFOPLIST_FILE = FleapUITests/Info.plist;
@@ -516,6 +709,7 @@
 				FFF7AC3C1DB3389100430305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFF7AC3D1DB3389100430305 /* Build configuration list for PBXNativeTarget "FleapTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +718,7 @@
 				FFF7AC3F1DB3389100430305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFF7AC401DB3389100430305 /* Build configuration list for PBXNativeTarget "FleapUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +727,7 @@
 				FFF7AC421DB3389100430305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
