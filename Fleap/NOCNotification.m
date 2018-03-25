@@ -10,4 +10,9 @@
 
 @implementation NOCNotification
 
+- (void) postSomeNotification
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOCNotificationKey object:self userInfo:@{@"name": @"noctiz"}];
+}
+
 @end

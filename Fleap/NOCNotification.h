@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * const NOCNotificationKey = @"co.noctiz.fleap";
+
 @interface NOCNotification : NSObject
+
+- (void) postSomeNotification;
 
 @end

@@ -10,4 +10,9 @@
 
 @interface NOCEnumerator : NSObject
 
+- (instancetype)initWithNestedNumberArray:(NSArray *)array;
+
+- (id)nextObject;
+- (NSArray *)allObjects;
+
 @end

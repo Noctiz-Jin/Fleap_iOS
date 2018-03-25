@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.NProtocol = [[NOCProtocol alloc] init];
+    self.NKVO = [[NOCKeyValueObject alloc] init];
+    self.NKVO.name = @"NOCTIZ";
     // Override point for customization after application launch.
     return YES;
 }

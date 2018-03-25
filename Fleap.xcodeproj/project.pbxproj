@@ -25,6 +25,8 @@
 		FFFD804E2067153F00425B14 /* NOCEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD804D2067153F00425B14 /* NOCEnumerator.m */; };
 		FFFD805120671C7B00425B14 /* NOCProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD805020671C7B00425B14 /* NOCProtocol.m */; };
 		FFFD8054206721BA00425B14 /* NOCNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD8053206721BA00425B14 /* NOCNotification.m */; };
+		FFFD805720672D9200425B14 /* NOCKeyValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD805620672D9200425B14 /* NOCKeyValueObject.m */; };
+		FFFD805A2067758000425B14 /* AlgorithmGrandList.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD80592067758000425B14 /* AlgorithmGrandList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,10 @@
 		FFFD805020671C7B00425B14 /* NOCProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCProtocol.m; sourceTree = "<group>"; };
 		FFFD8052206721BA00425B14 /* NOCNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCNotification.h; sourceTree = "<group>"; };
 		FFFD8053206721BA00425B14 /* NOCNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCNotification.m; sourceTree = "<group>"; };
+		FFFD805520672D9200425B14 /* NOCKeyValueObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCKeyValueObject.h; sourceTree = "<group>"; };
+		FFFD805620672D9200425B14 /* NOCKeyValueObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCKeyValueObject.m; sourceTree = "<group>"; };
+		FFFD80582067758000425B14 /* AlgorithmGrandList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgorithmGrandList.h; sourceTree = "<group>"; };
+		FFFD80592067758000425B14 /* AlgorithmGrandList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmGrandList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,10 @@
 				FFFD805020671C7B00425B14 /* NOCProtocol.m */,
 				FFFD8052206721BA00425B14 /* NOCNotification.h */,
 				FFFD8053206721BA00425B14 /* NOCNotification.m */,
+				FFFD805520672D9200425B14 /* NOCKeyValueObject.h */,
+				FFFD805620672D9200425B14 /* NOCKeyValueObject.m */,
+				FFFD80582067758000425B14 /* AlgorithmGrandList.h */,
+				FFFD80592067758000425B14 /* AlgorithmGrandList.m */,
 			);
 			name = Algorithm;
 			sourceTree = "<group>";
@@ -508,10 +518,12 @@
 			files = (
 				FF11E36A20636A7D001E048F /* UIView+hitTest.m in Sources */,
 				FFF7AC181DB3389100430305 /* ViewController.m in Sources */,
+				FFFD805A2067758000425B14 /* AlgorithmGrandList.m in Sources */,
 				FF15BF3520622757002019CF /* AlgoNSRange.m in Sources */,
 				FFF7AC151DB3389100430305 /* AppDelegate.m in Sources */,
 				FFFD805120671C7B00425B14 /* NOCProtocol.m in Sources */,
 				FFFD8054206721BA00425B14 /* NOCNotification.m in Sources */,
+				FFFD805720672D9200425B14 /* NOCKeyValueObject.m in Sources */,
 				FFFD804E2067153F00425B14 /* NOCEnumerator.m in Sources */,
 				FFF7AC121DB3389100430305 /* main.m in Sources */,
 				FF11E36720636612001E048F /* AlgoUIViewPinpoint.m in Sources */,
