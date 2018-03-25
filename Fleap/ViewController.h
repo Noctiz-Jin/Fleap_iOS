@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol NOCDelegate
+
+@required
+- (NSString *)delegateCoalescing:(NSString *)s1 and:(NSString *)s2;
+@optional
+- (void)delegatePrint:(NSString *)s;
+@end
+
 @interface ViewController : UIViewController
 
 
