@@ -64,10 +64,7 @@ static void *NOCExampleContext = &NOCExampleContext;
     
     NSLog(@"---Launched Algorithm---");
     
-    
-    
 
-    
     
 //    // KVO
 //    [[(AppDelegate *)[[UIApplication sharedApplication] delegate] NKVO] setName:@"new Noctiz"];
@@ -86,6 +83,8 @@ static void *NOCExampleContext = &NOCExampleContext;
 //    // Delegation
 //    NSLog(@"%@", [self.delegate delegateCoalescing:@"PiPi" and:@"POP"]);
 }
+
+
 
 // KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
