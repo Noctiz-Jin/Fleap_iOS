@@ -12,6 +12,8 @@
 #import "NOCNotification.h"
 #import "NOCKeyValueObject.h"
 #import "NOCEnumerator.h"
+#import "CancelState.h"
+#import "NOCPersistence.h"
 
 static void *NOCExampleContext = &NOCExampleContext;
 
@@ -25,6 +27,9 @@ static void *NOCExampleContext = &NOCExampleContext;
 // KVC
 @property (strong, nonatomic) NSString *kvc;
 @property (strong, nonatomic) NOCKeyValueObject *kvo;
+
+// Cancelled dispatch after
+@property (strong, nonatomic) CancelState *cancelState;
 @end
 
 @implementation ViewController
@@ -60,11 +65,20 @@ static void *NOCExampleContext = &NOCExampleContext;
     self.delegate = [(AppDelegate *)[[UIApplication sharedApplication] delegate] NProtocol];
 }
 
-- (IBAction)launchAlgorithm:(UIButton *)sender {
-    
-    NSLog(@"---Launched Algorithm---");
-    
+#pragma mark - Main Test Ground
 
+- (IBAction)applySomething:(UIButton *)sender {
+    
+//    // Dispatch Cancellation
+//    self.cancelState.cancelled = YES;
+}
+
+
+- (IBAction)launchAlgorithm:(UIButton *)sender {
+    NSLog(@"---Launched Algorithm---");
+
+
+    
     
 //    // KVO
 //    [[(AppDelegate *)[[UIApplication sharedApplication] delegate] NKVO] setName:@"new Noctiz"];
@@ -84,7 +98,7 @@ static void *NOCExampleContext = &NOCExampleContext;
 //    NSLog(@"%@", [self.delegate delegateCoalescing:@"PiPi" and:@"POP"]);
 }
 
-
+#pragma mark - Others
 
 // KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context

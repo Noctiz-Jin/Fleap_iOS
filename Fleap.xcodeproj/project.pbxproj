@@ -13,6 +13,9 @@
 		FF11E36720636612001E048F /* AlgoUIViewPinpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FF11E36620636612001E048F /* AlgoUIViewPinpoint.m */; };
 		FF11E36A20636A7D001E048F /* UIView+hitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF11E36920636A7D001E048F /* UIView+hitTest.m */; };
 		FF15BF3520622757002019CF /* AlgoNSRange.m in Sources */ = {isa = PBXBuildFile; fileRef = FF15BF3420622757002019CF /* AlgoNSRange.m */; };
+		FFB116782068681F00328061 /* CancelState.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB116772068681F00328061 /* CancelState.m */; };
+		FFB1167B20686CF200328061 /* NOCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB1167A20686CF200328061 /* NOCSingleton.m */; };
+		FFB1167E20688DCC00328061 /* NOCPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB1167D20688DCC00328061 /* NOCPersistence.m */; };
 		FFF7AC121DB3389100430305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC111DB3389100430305 /* main.m */; };
 		FFF7AC151DB3389100430305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC141DB3389100430305 /* AppDelegate.m */; };
 		FFF7AC181DB3389100430305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC171DB3389100430305 /* ViewController.m */; };
@@ -62,6 +65,12 @@
 		FF11E36920636A7D001E048F /* UIView+hitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+hitTest.m"; sourceTree = "<group>"; };
 		FF15BF3320622757002019CF /* AlgoNSRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlgoNSRange.h; sourceTree = "<group>"; };
 		FF15BF3420622757002019CF /* AlgoNSRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgoNSRange.m; sourceTree = "<group>"; };
+		FFB116762068681F00328061 /* CancelState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancelState.h; sourceTree = "<group>"; };
+		FFB116772068681F00328061 /* CancelState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CancelState.m; sourceTree = "<group>"; };
+		FFB1167920686CF200328061 /* NOCSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCSingleton.h; sourceTree = "<group>"; };
+		FFB1167A20686CF200328061 /* NOCSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCSingleton.m; sourceTree = "<group>"; };
+		FFB1167C20688DCC00328061 /* NOCPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCPersistence.h; sourceTree = "<group>"; };
+		FFB1167D20688DCC00328061 /* NOCPersistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCPersistence.m; sourceTree = "<group>"; };
 		FFF7AC0D1DB3389100430305 /* Fleap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fleap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF7AC111DB3389100430305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFF7AC131DB3389100430305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +173,12 @@
 				FFFD805620672D9200425B14 /* NOCKeyValueObject.m */,
 				FFFD80582067758000425B14 /* AlgorithmGrandList.h */,
 				FFFD80592067758000425B14 /* AlgorithmGrandList.m */,
+				FFB116762068681F00328061 /* CancelState.h */,
+				FFB116772068681F00328061 /* CancelState.m */,
+				FFB1167920686CF200328061 /* NOCSingleton.h */,
+				FFB1167A20686CF200328061 /* NOCSingleton.m */,
+				FFB1167C20688DCC00328061 /* NOCPersistence.h */,
+				FFB1167D20688DCC00328061 /* NOCPersistence.m */,
 			);
 			name = Algorithm;
 			sourceTree = "<group>";
@@ -519,8 +534,10 @@
 				FF11E36A20636A7D001E048F /* UIView+hitTest.m in Sources */,
 				FFF7AC181DB3389100430305 /* ViewController.m in Sources */,
 				FFFD805A2067758000425B14 /* AlgorithmGrandList.m in Sources */,
+				FFB116782068681F00328061 /* CancelState.m in Sources */,
 				FF15BF3520622757002019CF /* AlgoNSRange.m in Sources */,
 				FFF7AC151DB3389100430305 /* AppDelegate.m in Sources */,
+				FFB1167B20686CF200328061 /* NOCSingleton.m in Sources */,
 				FFFD805120671C7B00425B14 /* NOCProtocol.m in Sources */,
 				FFFD8054206721BA00425B14 /* NOCNotification.m in Sources */,
 				FFFD805720672D9200425B14 /* NOCKeyValueObject.m in Sources */,
@@ -528,6 +545,7 @@
 				FFF7AC121DB3389100430305 /* main.m in Sources */,
 				FF11E36720636612001E048F /* AlgoUIViewPinpoint.m in Sources */,
 				FFFD804B206712A100425B14 /* NOCNSExceptionHandling.m in Sources */,
+				FFB1167E20688DCC00328061 /* NOCPersistence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

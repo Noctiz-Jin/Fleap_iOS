@@ -108,4 +108,20 @@
     }
     NSLog(@"%@", [input subarrayWithRange:NSMakeRange(0, index)]);
 }
+
+- (void)removeDuplicateAndRemainOrder
+{
+    NSMutableSet *mySet = [NSMutableSet new];
+    NSArray *input = @[@2, @1, @3, @1, @2];
+    NSMutableArray *result = [NSMutableArray new];
+    for (NSNumber * num in input)
+    {
+        if ([mySet containsObject:num] == NO)
+        {
+            [mySet addObject:num];
+            [result addObject:num];
+        }
+    }
+    NSLog(@"%@", result);
+}
 @end
