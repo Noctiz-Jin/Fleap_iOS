@@ -124,4 +124,20 @@
     }
     NSLog(@"%@", result);
 }
+
+- (BOOL)isPalindrome:(NSString *)s
+{
+    NSUInteger left = 0, right = [s length] - 1;
+    
+    while (left < right)
+    {
+        char l = [s characterAtIndex:left];
+        char r = [s characterAtIndex:right];
+        if (l != r) return NO;
+        left++;
+        right--;
+    }
+    return YES;
+}
+
 @end
