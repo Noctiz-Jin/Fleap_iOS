@@ -140,4 +140,32 @@
     return YES;
 }
 
+- (void)printViews:(UIView *)view
+{
+    if (view != nil)
+    {
+        NSLog(@"%zd", view.tag);
+        NSLog(@"%@", [view subviews]);
+    }
+    for (NSUInteger i = 0; i < [view.subviews count]; i++)
+    {
+        [self printViews:view.subviews[i]];
+    }
+    
+//    UIView *a = [UIView new];
+//    a.tag = 1;
+//    UIView *q = [UIView new];
+//    q.tag = 2;
+//    UIView *w = [UIView new];
+//    w.tag = 3;
+//    UIView *x = [UIView new];
+//    x.tag = 4;
+//    
+//    [a addSubview:q];
+//    [a addSubview:w];
+//    [w addSubview:x];
+//    
+//    [self printViews:a];
+}
+
 @end
