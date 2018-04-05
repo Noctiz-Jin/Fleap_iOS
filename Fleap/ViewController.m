@@ -15,6 +15,7 @@
 #import "CancelState.h"
 #import "NOCPersistence.h"
 #import "NOCOperation.h"
+#import "SGImageCache.h"
 #import <objc/runtime.h>
 
 static void *NOCExampleContext = &NOCExampleContext;
@@ -23,6 +24,7 @@ static void *NOCExampleContext = &NOCExampleContext;
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *launchButton;
+@property (weak, nonatomic) IBOutlet UIImageView *myImage;
 @property (weak, nonatomic) id<NOCDelegate> delegate;
 @property (strong, nonatomic) NOCNotification *NN;
 
@@ -46,6 +48,15 @@ static void *NOCExampleContext = &NOCExampleContext;
     UIView *box = [[UIView alloc] initWithFrame:self.launchButton.frame];
     [box setBackgroundColor:[UIColor grayColor]];
     [self.view insertSubview:box atIndex:0];
+    
+    NSString *myURL = @"https://github.com/Noctiz-Jin/NOCAFF/raw/master/Ezio.png";
+    [SGImageCache getImageForURL:myURL requestHeaders:@{} cacheKey:@"Ezio"].then(^(UIImage *image) {
+        if (image) {
+            self.myImage.image = image;
+        }
+    });
+        
+    [SGImageCache slowGetImageForURL:myURL requestHeaders:nil cacheKey:nil];
     
     // KVO
     [(AppDelegate *)[[UIApplication sharedApplication] delegate] addObserver:self forKeyPath:@"NKVO.name" options:(NSKeyValueObservingOptionNew |
