@@ -30,6 +30,8 @@ static void *NOCExampleContext = &NOCExampleContext;
 
 // KVC
 @property (strong, nonatomic) NSString *kvc;
+@property (strong, nonatomic) NOCKVC1 *kvc1;
+// KVO
 @property (strong, nonatomic) NOCKeyValueObject *kvo;
 
 // Cancelled dispatch after
@@ -61,11 +63,23 @@ static void *NOCExampleContext = &NOCExampleContext;
     // KVO
     [(AppDelegate *)[[UIApplication sharedApplication] delegate] addObserver:self forKeyPath:@"NKVO.name" options:(NSKeyValueObservingOptionNew |
                                                             NSKeyValueObservingOptionOld) context:NULL];
-    // KVC
     self.kvo = [[NOCKeyValueObject alloc] init];
     self.kvo.name = @"OLD";
     [self.kvo addObserver:self forKeyPath:@"name" options:(NSKeyValueObservingOptionNew |
                                                            NSKeyValueObservingOptionOld) context:NULL];
+    // KVC
+    NOCKVC3 *kvc_a = [NOCKVC3 new];
+    NOCKVC3 *kvc_b = [NOCKVC3 new];
+    NOCKVC3 *kvc_c = [NOCKVC3 new];
+    kvc_a.a3 = @"im a";
+    kvc_b.a3 = @"im b";
+    kvc_c.a3 = @"im c";
+    NOCKVC2 *kvc2_ab = [NOCKVC2 new];
+    NOCKVC2 *kvc2_c = [NOCKVC2 new];
+    kvc2_ab.a2 = @[kvc_a, kvc_b];
+    kvc2_c.a2 = @[kvc_c];
+    self.kvc1 = [NOCKVC1 new];
+    self.kvc1.a1 = @[kvc2_ab, kvc2_c];
 
     // Notification
     self.NN = [[NOCNotification alloc] init];
@@ -90,10 +104,12 @@ static void *NOCExampleContext = &NOCExampleContext;
 //    dispatch_queue_t concurrent = dispatch_queue_create("com.example.Noctiz", DISPATCH_QUEUE_CONCURRENT);
 //    dispatch_queue_t mainQ = dispatch_get_main_queue();
 //    dispatch_queue_t globalConcurrent = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);// every queue you define will be targeting on DISPATCH_QUEUE_PRIORITY_DEFAULT
-    
+//        dispatch_apply(size_t iterations, dispatch_queue_t  _Nonnull queue, ^(size_t) {
+//        })
     
 //    // NSOperation
 //    NSOperationQueue *myQueue = [NSOperationQueue new];
+//    myQueue.maxConcurrentOperationCount = 1;
 //    [myQueue addOperation:[NOCOperation operationWithBlock:^(NSString *task) {
 //        NSLog(@"Assign %@ to Noctiz", task);
 //    }]];
@@ -108,7 +124,14 @@ static void *NOCExampleContext = &NOCExampleContext;
 //    NSLog(@"%@", [self valueForKeyPath:@"kvo.name"]);
 //    [self setValue:@"NEW" forKeyPath:@"kvo.name"];
 //    NSLog(@"%@", [self valueForKeyPath:@"kvo.name"]);
-
+//    NSArray *res1 = [self valueForKeyPath:@"kvc1.a1.a2.a3"];
+//    NSLog(@"%@", res1);
+//    NSArray *res2 = [self valueForKeyPath:@"kvc1.a1.a2"];
+//    NSLog(@"%@", res2);
+//    NSArray *res3 = [self valueForKeyPath:@"kvc1.a1"];
+//    NSLog(@"%@", res3);
+    
+    
 //    // Notification
 //    [self.NN postSomeNotification];
 //

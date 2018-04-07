@@ -14,3 +14,21 @@
 @property (strong, nonatomic) NOCKeyValueObject *brother;
 
 @end
+
+@interface NOCKVC1 : NSObject
+
+@property (strong, nonatomic) NSArray *a1;
+
+@end
+
+@interface NOCKVC2 : NSObject
+
+@property (strong, nonatomic) NSArray *a2;
+
+@end
+
+@interface NOCKVC3 : NSObject
+
+@property (strong, nonatomic) NSString *a3;
+
+@end

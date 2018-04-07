@@ -21,3 +21,15 @@
 }
 
 @end
+
+@implementation NOCKVC1
+
+@end
+
+@implementation NOCKVC2
+
+@end
+
+@implementation NOCKVC3
+
+@end

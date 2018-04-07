@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NOCOperation : NSObject
+@interface NOCOperation : NSOperation
 
 +(NSOperation *)operationWithNoc;
 
