@@ -47,20 +47,20 @@
 + (void)handleException:(id)e
 {
     if([e isKindOfClass:[NSException class]]) {
-        NSLog(@"Flurry: Caught Exception in Flurry Analytics Code");
-        NSLog(@"Flurry: -----------------------------------------");
-        NSLog(@"Flurry: Name:%@ Reason:%@", [e name], [e reason]);
-        NSLog(@"Flurry: %@", [e userInfo]);
+        NSLog(@"NOC: Caught Exception in Flurry Analytics Code");
+        NSLog(@"NOC: -----------------------------------------");
+        NSLog(@"NOC: Name:%@ Reason:%@", [e name], [e reason]);
+        NSLog(@"NOC: %@", [e userInfo]);
     }
     else if([e isKindOfClass:[NSError class]]) {
-        NSLog(@"Flurry: Caught Error in Flurry Analytics Code");
-        NSLog(@"Flurry: -----------------------------------------");
-        NSLog(@"Flurry: Code:%ld Domain:%@", (long)[e code], [e domain]);
-        NSLog(@"Flurry: %@", [e userInfo]);
+        NSLog(@"NOC: Caught Error in Flurry Analytics Code");
+        NSLog(@"NOC: -----------------------------------------");
+        NSLog(@"NOC: Code:%ld Domain:%@", (long)[e code], [e domain]);
+        NSLog(@"NOC: %@", [e userInfo]);
     }
     else {
-        NSLog(@"Flurry: Caught Error in Flurry Analytics Code");
-        NSLog(@"Flurry: %@", e);
+        NSLog(@"NOC: Caught Error in Flurry Analytics Code");
+        NSLog(@"NOC: %@", e);
     }
 }
 

@@ -19,7 +19,7 @@
         return;
     }
 
-    // force a decompress
+    // force a decompress BEFORE get to the main queue, improve performace
     if (self.forceDecompress) {
         UIGraphicsBeginImageContext(CGSizeMake(1, 1));
         CGContextRef context = UIGraphicsGetCurrentContext();

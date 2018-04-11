@@ -168,4 +168,35 @@
 //    [self printViews:a];
 }
 
+- (NSNumber *)versionCompare:(NSString *)v1 andVersion:(NSString *)v2
+{
+    NSArray *a1 = [v1 componentsSeparatedByString:@"."];
+    NSArray *a2 = [v2 componentsSeparatedByString:@"."];
+    NSUInteger s1 = [a1 count];
+    NSUInteger s2 = [a2 count];
+    NSUInteger size = s1 > s2 ? s1 : s2;
+    for (NSUInteger i = 0; i < size; i++)
+    {
+        NSUInteger n1;
+        NSUInteger n2;
+        NSNumberFormatter *f = [NSNumberFormatter new];
+        f.numberStyle = NSNumberFormatterDecimalStyle;
+        if (i < [a1 count]) n1 = [[f numberFromString:a1[i]] unsignedIntegerValue];
+        else n1 = 0;
+        
+        if (i < [a2 count]) n2 = [[f numberFromString:a2[i]] unsignedIntegerValue];
+        else n2 = 0;
+        
+        if (n1 > n2) return @1;
+        else if (n1 < n2) return @2;
+    }
+    
+    return @0;
+    
+//    NSString *v1 = @"12.4.1.3";
+//    NSString *v2 = @"12.3.2.3";
+//    NSNumber *result = [self versionCompare:v1 andVersion:v2];
+//    NSLog(@"%@", result);
+}
+
 @end
