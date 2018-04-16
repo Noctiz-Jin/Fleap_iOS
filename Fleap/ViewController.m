@@ -20,6 +20,9 @@
 
 static void *NOCExampleContext = &NOCExampleContext;
 
+typedef void (^myBlock) (void);
+// a block that takes a block as parameter, returns a block as return value
+typedef void (^(^myCrazyBlock) (void (^) (void))) (void);
 
 @interface ViewController ()
 
@@ -99,7 +102,8 @@ static void *NOCExampleContext = &NOCExampleContext;
 - (IBAction)launchAlgorithm:(UIButton *)sender {
     NSLog(@"---Launched Algorithm---");
 
-
+    
+    
     // GCD
 //    dispatch_queue_t serial = dispatch_queue_create("com.example.Noctiz", DISPATCH_QUEUE_SERIAL);
 //    dispatch_queue_t concurrent = dispatch_queue_create("com.example.Noctiz", DISPATCH_QUEUE_CONCURRENT);
