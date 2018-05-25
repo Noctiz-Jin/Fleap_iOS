@@ -33,7 +33,7 @@
     
     NSMutableArray *path = [NSMutableArray new];
     NSArray *result = [NSArray new];
-    [self locateView:x inView:a andPath:&path andResult:&result];
+    [self locateView:x inView:a andPath:path andResult:&result];
     
     NSLog(@"%@", result);
     UIView *temp = [self locateSubview:b andArray:result];
@@ -43,18 +43,18 @@
     }
 }
 
-- (void)locateView:(UIView *)x inView:(UIView *)a andPath:(NSMutableArray **)path andResult:(NSArray **)result
+- (void)locateView:(UIView *)x inView:(UIView *)a andPath:(NSMutableArray *)path andResult:(NSArray **)result
 {
     if ([x isEqual:a]) return;
     for (NSUInteger i = 0; i < [a.subviews count]; i++)
     {
-        [*path addObject:[NSNumber numberWithUnsignedInteger:i]];
+        [path addObject:[NSNumber numberWithUnsignedInteger:i]];
         if ([(UIView *)a.subviews[i] isEqual:x]) {
-            *result = [*path copy];
+            *result = [path copy];
             break;
         }
         [self locateView:x inView:(UIView *)a.subviews[i] andPath:path andResult:result];
-        [*path removeLastObject];
+        [path removeLastObject];
     }
 }
 

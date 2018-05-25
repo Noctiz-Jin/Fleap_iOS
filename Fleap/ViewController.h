@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol NOCDelegate
+@protocol NOCDelegate <NSObject>
 
 @required
 - (NSString *)delegateCoalescing:(NSString *)s1 and:(NSString *)s2;

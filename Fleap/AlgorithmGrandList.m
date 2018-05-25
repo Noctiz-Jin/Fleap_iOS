@@ -131,7 +131,7 @@
     
     while (left < right)
     {
-        char l = [s characterAtIndex:left];
+        char l = [s characterAtIndex:left];//unichar
         char r = [s characterAtIndex:right];
         if (l != r) return NO;
         left++;
@@ -197,6 +197,18 @@
 //    NSString *v2 = @"12.3.2.3";
 //    NSNumber *result = [self versionCompare:v1 andVersion:v2];
 //    NSLog(@"%@", result);
+}
+
+- (BOOL)canWin:(NSString *)input
+{
+    NSRange i = [input rangeOfString:@"++" options:0 range:NSMakeRange(0, [input length])];
+    while (i.location != NSNotFound) {
+        NSString *next = [input stringByReplacingCharactersInRange:i withString:@"--"];
+        if ([self canWin:next] == NO) return YES;
+        i = [input rangeOfString:@"++" options:0 range:NSMakeRange(i.location + 1, [input length] - i.location - 1)];
+    }
+    
+    return NO;
 }
 
 @end

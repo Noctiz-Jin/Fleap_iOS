@@ -17,7 +17,7 @@
     NSURLSession *mySession = [NSURLSession sessionWithConfiguration:myConfig];
     NSMutableURLRequest *myRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://www.google.com"]];
     [myRequest setHTTPBody:nil];
-    [myRequest addValue:@"my" forHTTPHeaderField:@"wow"];
+    [myRequest addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     NSURLSessionDataTask *myTask = [mySession dataTaskWithRequest:myRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSHTTPURLResponse *myResponse = (NSHTTPURLResponse *)response;
         if (myResponse.statusCode == 200)

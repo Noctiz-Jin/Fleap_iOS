@@ -19,10 +19,10 @@
 {
     self = [super init];
     if (self) {
-        self.originalArray = [array copy];
-        self.stack = [NSMutableArray array];
+        _originalArray = [array copy];
+        _stack = [NSMutableArray array];
         for (NSInteger i = array.count - 1; i >= 0; i --) {
-            [self.stack addObject:array[i]];
+            [_stack addObject:array[i]];
         }
     }
     return self;

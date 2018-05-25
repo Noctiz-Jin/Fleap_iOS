@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "ViewController.h"
+@protocol NOCCDelegate <NSObject>
 
+@required
+- (NSString *)delegateCoalescing:(NSString *)s1 and:(NSString *)s2;
+@optional
+- (void)delegatePrint:(NSString *)s;
+@end
 
 @interface NOCProtocol : NSObject <NOCDelegate>
 

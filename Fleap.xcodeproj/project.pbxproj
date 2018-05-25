@@ -21,6 +21,7 @@
 		FFB1168120689F4300328061 /* NOCOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB1168020689F4300328061 /* NOCOperation.m */; };
 		FFB116842068BF0600328061 /* NOCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB116832068BF0600328061 /* NOCTableView.m */; };
 		FFB116872068C2B500328061 /* NOCUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB116862068C2B500328061 /* NOCUIControl.m */; };
+		FFE329F120B7AEFC00BC6302 /* NOCEnumeratorBest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE329F020B7AEFC00BC6302 /* NOCEnumeratorBest.m */; };
 		FFF7AC121DB3389100430305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC111DB3389100430305 /* main.m */; };
 		FFF7AC151DB3389100430305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC141DB3389100430305 /* AppDelegate.m */; };
 		FFF7AC181DB3389100430305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC171DB3389100430305 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 		FFF7AC201DB3389100430305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF7AC1E1DB3389100430305 /* LaunchScreen.storyboard */; };
 		FFF7AC2B1DB3389100430305 /* FleapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC2A1DB3389100430305 /* FleapTests.m */; };
 		FFF7AC361DB3389100430305 /* FleapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF7AC351DB3389100430305 /* FleapUITests.m */; };
+		FFFD103F208D8DA400B2C8E2 /* NOCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD103E208D8DA400B2C8E2 /* NOCStack.m */; };
+		FFFD1042208D8DF000B2C8E2 /* NOCQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD1041208D8DF000B2C8E2 /* NOCQueue.m */; };
 		FFFD804B206712A100425B14 /* NOCNSExceptionHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD804A206712A100425B14 /* NOCNSExceptionHandling.m */; };
 		FFFD804E2067153F00425B14 /* NOCEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD804D2067153F00425B14 /* NOCEnumerator.m */; };
 		FFFD805120671C7B00425B14 /* NOCProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFD805020671C7B00425B14 /* NOCProtocol.m */; };
@@ -86,6 +89,8 @@
 		FFB116832068BF0600328061 /* NOCTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCTableView.m; sourceTree = "<group>"; };
 		FFB116852068C2B500328061 /* NOCUIControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCUIControl.h; sourceTree = "<group>"; };
 		FFB116862068C2B500328061 /* NOCUIControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCUIControl.m; sourceTree = "<group>"; };
+		FFE329EF20B7AEFC00BC6302 /* NOCEnumeratorBest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCEnumeratorBest.h; sourceTree = "<group>"; };
+		FFE329F020B7AEFC00BC6302 /* NOCEnumeratorBest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCEnumeratorBest.m; sourceTree = "<group>"; };
 		FFF7AC0D1DB3389100430305 /* Fleap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fleap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF7AC111DB3389100430305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFF7AC131DB3389100430305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +107,10 @@
 		FFF7AC311DB3389100430305 /* FleapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF7AC351DB3389100430305 /* FleapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FleapUITests.m; sourceTree = "<group>"; };
 		FFF7AC371DB3389100430305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFFD103D208D8DA400B2C8E2 /* NOCStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCStack.h; sourceTree = "<group>"; };
+		FFFD103E208D8DA400B2C8E2 /* NOCStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCStack.m; sourceTree = "<group>"; };
+		FFFD1040208D8DEF00B2C8E2 /* NOCQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCQueue.h; sourceTree = "<group>"; };
+		FFFD1041208D8DF000B2C8E2 /* NOCQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCQueue.m; sourceTree = "<group>"; };
 		FFFD8049206712A100425B14 /* NOCNSExceptionHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCNSExceptionHandling.h; sourceTree = "<group>"; };
 		FFFD804A206712A100425B14 /* NOCNSExceptionHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NOCNSExceptionHandling.m; sourceTree = "<group>"; };
 		FFFD804C2067153F00425B14 /* NOCEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NOCEnumerator.h; sourceTree = "<group>"; };
@@ -178,6 +187,8 @@
 				FF11E36920636A7D001E048F /* UIView+hitTest.m */,
 				FFFD8049206712A100425B14 /* NOCNSExceptionHandling.h */,
 				FFFD804A206712A100425B14 /* NOCNSExceptionHandling.m */,
+				FFE329EF20B7AEFC00BC6302 /* NOCEnumeratorBest.h */,
+				FFE329F020B7AEFC00BC6302 /* NOCEnumeratorBest.m */,
 				FFFD804C2067153F00425B14 /* NOCEnumerator.h */,
 				FFFD804D2067153F00425B14 /* NOCEnumerator.m */,
 				FFFD804F20671C7B00425B14 /* NOCProtocol.h */,
@@ -233,6 +244,7 @@
 		FFF7AC0F1DB3389100430305 /* Fleap */ = {
 			isa = PBXGroup;
 			children = (
+				FFFD103C208D8D9000B2C8E2 /* Utils */,
 				FF15BF322062272A002019CF /* Algorithm */,
 				FFF7AC131DB3389100430305 /* AppDelegate.h */,
 				FFF7AC141DB3389100430305 /* AppDelegate.m */,
@@ -271,6 +283,17 @@
 				FFF7AC371DB3389100430305 /* Info.plist */,
 			);
 			path = FleapUITests;
+			sourceTree = "<group>";
+		};
+		FFFD103C208D8D9000B2C8E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD103D208D8DA400B2C8E2 /* NOCStack.h */,
+				FFFD103E208D8DA400B2C8E2 /* NOCStack.m */,
+				FFFD1040208D8DEF00B2C8E2 /* NOCQueue.h */,
+				FFFD1041208D8DF000B2C8E2 /* NOCQueue.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,12 +495,15 @@
 				FFB116842068BF0600328061 /* NOCTableView.m in Sources */,
 				FF11E36A20636A7D001E048F /* UIView+hitTest.m in Sources */,
 				FFF7AC181DB3389100430305 /* ViewController.m in Sources */,
+				FFE329F120B7AEFC00BC6302 /* NOCEnumeratorBest.m in Sources */,
 				FFFD805A2067758000425B14 /* AlgorithmGrandList.m in Sources */,
 				FF49420E2071CA28000AC7A9 /* NOCURLSession.m in Sources */,
+				FFFD103F208D8DA400B2C8E2 /* NOCStack.m in Sources */,
 				FFB116782068681F00328061 /* CancelState.m in Sources */,
 				FF15BF3520622757002019CF /* AlgoNSRange.m in Sources */,
 				FFF7AC151DB3389100430305 /* AppDelegate.m in Sources */,
 				FFB1167B20686CF200328061 /* NOCSingleton.m in Sources */,
+				FFFD1042208D8DF000B2C8E2 /* NOCQueue.m in Sources */,
 				FFFD805120671C7B00425B14 /* NOCProtocol.m in Sources */,
 				FF4942112071CE1D000AC7A9 /* NOCSwizzling.m in Sources */,
 				FFFD8054206721BA00425B14 /* NOCNotification.m in Sources */,

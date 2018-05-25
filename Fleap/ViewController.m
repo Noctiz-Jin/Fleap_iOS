@@ -12,6 +12,7 @@
 #import "NOCNotification.h"
 #import "NOCKeyValueObject.h"
 #import "NOCEnumerator.h"
+#import "NOCEnumeratorBest.h"
 #import "CancelState.h"
 #import "NOCPersistence.h"
 #import "NOCOperation.h"
@@ -101,9 +102,17 @@ typedef void (^(^myCrazyBlock) (void (^) (void))) (void);
 
 - (IBAction)launchAlgorithm:(UIButton *)sender {
     NSLog(@"---Launched Algorithm---");
-
     
+    NSArray *input = @[@[@1], @[@2,@3,@4],@5];
+    NOCEnumeratorBest *ne = [[NOCEnumeratorBest alloc] initWithNestedNumberArray:input];
+//    id item;
+//    while(item = [ne nextObject])
+//    {
+//        NSLog(@"%@", item);
+//    }
+    NSLog(@"%@", [ne allObjects]);
     
+    NSLog(@"---Launched Algorithm---");
     // GCD
 //    dispatch_queue_t serial = dispatch_queue_create("com.example.Noctiz", DISPATCH_QUEUE_SERIAL);
 //    dispatch_queue_t concurrent = dispatch_queue_create("com.example.Noctiz", DISPATCH_QUEUE_CONCURRENT);
@@ -145,6 +154,26 @@ typedef void (^(^myCrazyBlock) (void (^) (void))) (void);
 }
 
 #pragma mark - Others
+
+- (void)dataStructure
+{
+    NSMutableArray * marray = [NSMutableArray new];
+    NSUInteger a = 1;
+    NSUInteger c = 2;
+    NSValue * mint = [NSValue value:&a withObjCType:@encode(NSUInteger)];
+    NSValue * mint2 = [NSValue value:&c withObjCType:@encode(NSUInteger)];
+    NSMutableSet * mset = [NSMutableSet new];
+    [mset addObject:mint];
+    [mset addObject:mint2];
+    [marray addObject:mint];
+    NSUInteger b;
+    [(NSValue *)marray[0] getValue:&b];
+    NSLog(@"%ld", [mset count]);
+    NSMutableArray *msa = [@[@2, @5, @1, @8, @6] mutableCopy];
+    [msa sortUsingComparator:^(NSNumber* obj1, NSNumber* obj2) {
+        return [obj2 compare:obj1];
+    }];
+}
 
 // KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
