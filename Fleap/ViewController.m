@@ -102,16 +102,7 @@ typedef void (^(^myCrazyBlock) (void (^) (void))) (void);
 
 - (IBAction)launchAlgorithm:(UIButton *)sender {
     NSLog(@"---Launched Algorithm---");
-    
-    NSArray *input = @[@[@1], @[@2,@3,@4],@5];
-    NOCEnumeratorBest *ne = [[NOCEnumeratorBest alloc] initWithNestedNumberArray:input];
-//    id item;
-//    while(item = [ne nextObject])
-//    {
-//        NSLog(@"%@", item);
-//    }
-    NSLog(@"%@", [ne allObjects]);
-    
+
     NSLog(@"---Launched Algorithm---");
     // GCD
 //    dispatch_queue_t serial = dispatch_queue_create("com.example.Noctiz", DISPATCH_QUEUE_SERIAL);

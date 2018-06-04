@@ -197,8 +197,6 @@
 				FFFD8053206721BA00425B14 /* NOCNotification.m */,
 				FFFD805520672D9200425B14 /* NOCKeyValueObject.h */,
 				FFFD805620672D9200425B14 /* NOCKeyValueObject.m */,
-				FFFD80582067758000425B14 /* AlgorithmGrandList.h */,
-				FFFD80592067758000425B14 /* AlgorithmGrandList.m */,
 				FFB116762068681F00328061 /* CancelState.h */,
 				FFB116772068681F00328061 /* CancelState.m */,
 				FFB1167920686CF200328061 /* NOCSingleton.h */,
@@ -215,6 +213,15 @@
 				FF49420D2071CA28000AC7A9 /* NOCURLSession.m */,
 				FF49420F2071CE1D000AC7A9 /* NOCSwizzling.h */,
 				FF4942102071CE1D000AC7A9 /* NOCSwizzling.m */,
+			);
+			name = Algorithm;
+			sourceTree = "<group>";
+		};
+		FFBAAC5620C4D8BC00D99A9F /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				FFFD80582067758000425B14 /* AlgorithmGrandList.h */,
+				FFFD80592067758000425B14 /* AlgorithmGrandList.m */,
 			);
 			name = Algorithm;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 		FFF7AC0F1DB3389100430305 /* Fleap */ = {
 			isa = PBXGroup;
 			children = (
+				FFBAAC5620C4D8BC00D99A9F /* Algorithm */,
 				FFFD103C208D8D9000B2C8E2 /* Utils */,
 				FF15BF322062272A002019CF /* Algorithm */,
 				FFF7AC131DB3389100430305 /* AppDelegate.h */,
